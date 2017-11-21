@@ -1,3 +1,13 @@
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
 .input-names-container {
     background-color: lightblue;
     display: inline-block;
@@ -5,4 +15,12 @@
 
 input {
     background-color: lightgray;
+}
+
+
+.statsModule {
+    background-color: lightgoldenrodyellow;
+    height: 300px;
+    width: 300px;
+    text-align: center;
 }
