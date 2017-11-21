@@ -5,13 +5,18 @@ var statsModule = (function() {
 
     var statsCount = 0;
 
-    function increaseStatsCount() {
-        statsCount++;
-        render();
-    }
+    // function increaseStatsCount() {
+    //     statsCount++;
+    //     render();
+    // }
 
-    function decreaseStatsCount() {
-        statsCount--;
+    // function decreaseStatsCount() {
+    //     statsCount--;
+    //     render();
+    // }
+
+    function peopleChanged(people) {
+        statsCount = people.length;
         render();
     }
 
@@ -21,8 +26,7 @@ var statsModule = (function() {
     }
 
     return {
-        increaseStats: increaseStatsCount,
-        decreaseStats: decreaseStatsCount
+        peopleChangedMethod: peopleChanged
     };
 
 

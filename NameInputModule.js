@@ -21,9 +21,6 @@ var nameInputModule = (function () {
             $inputField.val("");
         }
 
-        //update statsModule
-        statsModule.increaseStats();
-
         render();
     }
 
@@ -48,13 +45,13 @@ var nameInputModule = (function () {
             
         }
 
-        //update statsModule
-        statsModule.decreaseStats();
-
         render();
     }
 
     function render() {
+
+        statsModule.peopleChangedMethod(people);
+
         //clear out list and re render
         $namesList.html("");
 
