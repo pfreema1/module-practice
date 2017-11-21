@@ -77,23 +77,6 @@ var nameInputModule = (function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /********BASIC MODULE STYLE */
 
 // var nameInputModule = {
