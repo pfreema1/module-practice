@@ -52,8 +52,8 @@ var events = {
     emit: function(eventName, data) {
         if(this.events[eventName]) {
             this.events[eventName].forEach(function(fn) {
-                console.log("hello from emit");
-                console.log(events);
+                // console.log("hello from emit");
+                // console.log(events);
                 fn(data);
             });
         }
@@ -61,11 +61,11 @@ var events = {
 };
 
 
-events.on("meowMix", function(numCats) {
-    console.log("numCats:  " + numCats);
-});
+// events.on("meowMix", function(numCats) {
+//     console.log("numCats:  " + numCats);
+// });
 
-events.emit("meowMix", 14);
+// events.emit("meowMix", 14);
 
 //my question:  how does the emit property know which function to call?  
 //A:  it is saved (the WHOLE function) in the events object (within events) along with the event name

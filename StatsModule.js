@@ -5,15 +5,7 @@ var statsModule = (function() {
 
     var statsCount = 0;
 
-    // function increaseStatsCount() {
-    //     statsCount++;
-    //     render();
-    // }
-
-    // function decreaseStatsCount() {
-    //     statsCount--;
-    //     render();
-    // }
+    events.on("PeopleChanged", peopleChanged);
 
     function peopleChanged(people) {
         statsCount = people.length;
@@ -25,9 +17,9 @@ var statsModule = (function() {
         $statsCountEl.text(statsCount);
     }
 
-    return {
-        peopleChangedMethod: peopleChanged
-    };
+    // return {
+    //     peopleChangedMethod: peopleChanged
+    // };
 
 
 })();

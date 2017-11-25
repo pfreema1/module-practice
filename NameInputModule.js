@@ -22,6 +22,8 @@ var nameInputModule = (function () {
         }
 
         render();
+
+        events.emit("PeopleChanged", people);
     }
 
     function deleteName(e) {
@@ -46,11 +48,13 @@ var nameInputModule = (function () {
         }
 
         render();
+
+        events.emit("PeopleChanged", people);
     }
 
     function render() {
 
-        statsModule.peopleChangedMethod(people);
+        //statsModule.peopleChangedMethod(people);
 
         //clear out list and re render
         $namesList.html("");
